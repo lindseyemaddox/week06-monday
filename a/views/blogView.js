@@ -11,9 +11,8 @@ App.Views.BlogView = Backbone.View.extend({
       var blogTitle = $('#blogTitle').val();
       var blogInput = $('#blogInput').val();
       this.collection.create({
-        blog: {
-          body: blog
-        }
+        title: blogTitle,
+        body: blogInput
       });
       console.log(this.collection);
 
